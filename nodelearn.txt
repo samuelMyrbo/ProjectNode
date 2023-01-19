@@ -1,0 +1,64 @@
+https://www.youtube.com/watch?v=gG3pytAY2MY
+
+- different engines for browsers, chrome v8, IE chakra
+- browser dome element same
+- node: better command interface for javascripting
+
+- possible things to do in node:
+- create http server
+- tab important, good for discovering
+- Array. -doubletap tab-> you get overview of all methods and all possible stuff
+- doubletab tab empty - all possible - libraries that are in node with lowercase
+- node is open source, wrapper around v8 from google, openSSL
+- learn libraries
+- node -h | all commands
+- execute and print - node -p ...
+- change v8 behaviour : v8--options
+- env variables: processes methods - interface between node and pc
+- echo?
+- create folder mkdir...
+- code . - start in vscode
+- require() get all info, objects and print from other js
+- exports, making global variBLE | create function for exports
+- create json package - npm init -y
+- package.json - object with info | scripts, add inn scripts that run when npm start there
+- npx - download latest version globally, find things anywhere
+- -D development . devDpependencies
+- do not touch manually dependencies dev, uninstall and install in terminal
+- npm start to start running node server
+
+- create node server:
+import http from 'http';
+const servername = http.createServer()
+server.listen(3000) | makes server stay on
+- node will exit if no reason for running
+- server.on('request', ()=>  {res.write('hello'); res.end(); //response sent })
+
+FREECODECAMP - NODE AND EXPRESS VID
+https://www.youtube.com/watch?v=Oe421EPjeBE&t=571s
+
+- console.log(__dirname)
+- console.log(__filename)
+- JS passing inn name:
+const sayHi = (name) => {
+    console.log('Hello there ${name}')
+}
+- node uses commonJS under the hood
+- share variables: module.exports = {john, peter}
+- get variables: const names = require(filename)
+- sayHi(names.peter) using two modules together, string and name
+- having two parameters inside one variabel:
+const { readFileSync, writeFileSync} = require('fs')
+const first = readFileSync(file)
+const second = writeFileSync(file) 
+OR
+writeFileSync('this is text')
+- parameterfunksjonen brukes automatisk på litt rar måte
+- 
+
+'npm.js PACKAGES
+- npm i "packaganame" to install locally. Locally is best
+- npm init -y | everything default package intstall json package
+- dependant pckg to a package get automatically installed
+- adding gitgnore to ignore some files to github upload
+- 
